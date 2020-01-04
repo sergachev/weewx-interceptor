@@ -1514,8 +1514,10 @@ class LW30x(Consumer):
         # map database fields to sensor tuples
         DEFAULT_SENSOR_MAP = {
             'pressure': 'baro.*.*',
-            'outTemp': 'ot.?:*.*',
-            'outHumidity': 'oh.?:*.*',
+            'outTemp': 'ot.1:*.*',
+            'outHumidity': 'oh.1:*.*',
+            'inTemp': 'ot.3:*.*',
+            'inHumidity': 'oh.3:*.*',
             'windSpeed': 'ws.?:*.*',
             'windGust': 'wg.?:*.*',
             'windDir': 'wd.?:*.*',
